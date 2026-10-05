@@ -425,10 +425,11 @@ nav a:hover::after {
   transform: translateY(-4px);
 }
 
-.icon {
-  font-size: 34px;
-  margin-bottom: 18px;
-}
+.choose-card .icon {
+        font-size: 30px;
+        color: #888;
+        margin-bottom: 8px;
+      }
 
 .choose-card h2{
 
