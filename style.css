@@ -406,7 +406,7 @@ nav a:hover::after {
 .choose {
   
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   min-height: 240px;
   background: #111;
 }
@@ -2006,5 +2006,143 @@ linear-gradient(
   color: white;
 
   box-shadow: 0 0 18px rgba(255,90,54,.35);
+}
+
+/* Thiết lập chung cho phần section */
+.perf-section {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Tiêu đề section có đường line cam điểm nhấn giống mẫu */
+.perf-section h2 {
+  font-size: 42px;
+  font-weight: 800;
+
+  color: #ffffff;
+  margin-bottom: 24px;
+  border-left: 4px solid #ff5500;
+  padding-left: 12px;
+  text-transform: uppercase;
+}
+
+/* --- GAME SHOW CARDS GRID --- */
+.perf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.perf-card {
+  
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 110px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+/* Hiệu ứng hover chuyên nghiệp: sáng viền và nhấc nhẹ card lên */
+.perf-card:hover {
+  border-color: #ff5500;
+  transform: translateY(-3px);
+  background: #1e1e1e;
+  box-shadow: 0 8px 20px rgba(255, 85, 0, 0.12);
+}
+
+.perf-main-info h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+.perf-main-info p {
+  font-size: 12px;
+  color: #888888;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Huy hiệu nhà đài góc phải */
+.badge-channel {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #ff5500;
+  background: rgba(255, 85, 0, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 85, 0, 0.2);
+}
+
+
+/* --- LIVE SHOWS TABLE DARK --- */
+.perf-table-dark {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.perf-row-dark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #222222;
+  transition: background 0.2s ease;
+}
+
+.perf-row-dark:last-child {
+  border-bottom: none;
+}
+
+.perf-row-dark:hover {
+  background: #202020;
+}
+
+.event-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+/* Làm mờ màu vai trò để tôn tên sự kiện lên */
+.role-sub {
+  font-size: 13px;
+  font-weight: 400;
+  color: #777777;
+  margin-left: 4px;
+}
+
+.event-year-dark {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff5500; /* Màu cam chủ đạo cho năm */
+  letter-spacing: 0.5px;
+}
+
+/* Responsive tối ưu cho thiết bị di động */
+@media (max-width: 768px) {
+  .perf-grid {
+    grid-template-columns: 1fr;
+  }
+  .perf-row-dark {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .event-year-dark {
+    align-self: flex-end;
+  }
 }
 

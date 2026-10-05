@@ -9,6 +9,9 @@ const translations = {
     chooseSoundDesc: "Live Sound. Studio Recording. Audio Post - Production",
     chooseProducerTitle: "Music Producer",
     chooseProducerDesc: "Original compositions. Beats. Film scoring.",
+    choosePerformanceTitle: "Performance & Musical Background",
+    choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
+
     explore: "Explore →",
 
     statProjects: "Projects Completed",
@@ -79,6 +82,12 @@ const translations = {
     footerMusic: "Music Production",
     footerLocation: "Location: Ho Chi Minh City",
     footerBottom: "Designed for Sound. Built for Impact.",
+
+    footerTitle: "Hau Tran",
+    footerDesc: "Sound engineer and audio producer working at the intersection of technical precision and creative instinct.",
+    footerNavTitle: "Navigation",
+    footerContactTitle: "Contact",
+    footerLocation: "Location: Ho Chi Minh City",
   },
 
   vi: {
@@ -92,10 +101,12 @@ const translations = {
     chooseProducerTitle: "Nhà Sản Xuất Âm Nhạc",
     chooseProducerDesc: "Sáng tác nhạc. Sản xuất beat. Nhạc phim.",
     explore: "Khám phá →",
+    choosePerformanceTitle: "Biểu Diễn & Nền Tảng Âm Nhạc",
+    choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
 
     perfTitle: "BIỂU DIỄN & NỀN TẢNG ÂM NHẠC",
     gameShowsTitle: "Chương Trình Game Show",
-    liveShowsTitle: "Chương Trình Trực Tiếp (Live Shows)",
+    liveShowsTitle: "Chương Trình Trực Tiếp ",
     judgingTitle: "Công Tác Giám Khảo",
     judgeRole: "Giám Khảo",
 
@@ -164,7 +175,15 @@ const translations = {
     footerMusic: "Sản Xuất Âm Nhạc",
     footerLocation: "Địa điểm: TP. Hồ Chí Minh",
     footerBottom: "Thiết kế cho âm thanh. Tạo nên dấu ấn.",
+
+    footerTitle: "Hậu Trần",
+    footerDesc: "Kỹ sư âm thanh và nhà sản xuất âm nhạc làm việc tại giao điểm giữa độ chính xác kỹ thuật và cảm xúc sáng tạo.",
+    footerNavTitle: "Điều Hướng",
+    footerContactTitle: "Liên Hệ",
+    footerLocation: "Địa điểm: TP. Hồ Chí Minh",
   },
+
+  
 };
 
 function setLanguage(lang) {
@@ -192,12 +211,25 @@ function setLanguage(lang) {
   setText("chooseSoundDesc", t.chooseSoundDesc);
   setText("chooseProducerTitle", t.chooseProducerTitle);
   setText("chooseProducerDesc", t.chooseProducerDesc);
+  setText("choosePerformanceTitle", t.choosePerformanceTitle);
+  setText("choosePerformanceDesc", t.choosePerformanceDesc);
 
   setText("perfHeroTitle", t.perfTitle);
   setText("titleGameShows", t.gameShowsTitle);
   setText("titleLiveShows", t.liveShowsTitle);
   setText("titleJudging", t.judgingTitle);
   setText("roleJudge", t.judgeRole);
+
+  // Cập nhật Footer
+  setText("footerTitle", t.footerTitle);
+  setText("footerDesc", t.footerDesc);
+  setText("footerNavTitle", t.footerNavTitle);
+  setText("footerNavOverview", t.navOverview);
+  setText("footerNavSound", t.navSound);
+  setText("footerNavProducer", t.navProducer);
+  setText("footerNavPerformance", t.navPerformance);
+  setText("footerContactTitle", t.footerContactTitle);
+  setText("footerLocation", t.footerLocation);
 
   document.querySelectorAll(".choose-card span").forEach((el) => {
     el.innerText = t.explore;
