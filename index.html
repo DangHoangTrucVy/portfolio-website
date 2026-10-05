@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hau Tran Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo1">
+    <img src="assets/lo.jpg" alt="Logo">
+  </a>
+  <nav>
+    <a href="index.html" class="active" id="navOverview">Overview</a>
+    <a href="sound-engineer.html" id="navSound">Audio Director / Audio Engineer</a>
+    <a href="audio-producer.html" id="navProducer">Music Producer</a>
+    <a href="performance.html" id="navPerformance">Performance & Musical Background</a>
+  </nav>
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('vi')">VI</button>
+  </div>
+</header>
+
+<section class="hero-menu">
+  <img src="assets/HAUTRAN.png" alt="Hau Tran">
+</section>
+
+<section class="choose">
+  <a href="sound-engineer.html" class="choose-card" id="chooseSound">
+    <div class="icon">♬</div>
+    <h2 id="chooseSoundTitle">Audio Director / Audio Engineer</h2>
+    <p id="chooseSoundDesc">Live events. Studio recordings. Post-production.</p>
+    <span>Explore →</span>
+  </a>
+
+  <a href="audio-producer.html" class="choose-card" id="chooseProducer">
+    <div class="icon">▥</div>
+    <h2 id="chooseProducerTitle">Music Producer</h2>
+    <p id="chooseProducerDesc">Original compositions. Beats. Film scoring.</p>
+    <span>Explore →</span>
+  </a>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-col">
+    <h3>Hau Tran</h3>
+    <p>
+      Sound engineer and audio producer working at the intersection 
+      of technical precision and creative instinct.
+    </p>
+    <div class="social">
+      
+      <a href="https://www.facebook.com/tran.haudrum/"><i class="fab fa-facebook-f"></i></a> <p>Facebook</p>
+      
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h4>Navigation</h4>
+    <a href="index.html">Overview</a>
+    <a href="sound-engineer.html">Audio Director / Audio Engineer</a>
+    <a href="audio-producer.html">Music Producer</a>
+    <a href="performance.html">Performance & Musical Background</a>
+  </div>
+
+  
+
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <p>Email: tranhauaudio@gmail.com</p>
+    <p>Phone: 0984 123 494</p>
+    <p>Location: Ho Chi Minh City</p>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p>© 2025 Trung Kien & Truc Vy. All rights reserved.</p>
+  <p>Designed for Sound. Built for Impact.</p>
+</div>
+
+<script src="lang.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

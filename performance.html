@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Performance & Musical Background</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Đồng bộ hoàn toàn style banner hero và font chữ với các trang khác */
+      .sound-hero {
+        position: relative;
+        padding: 100px 20px;
+        text-align: center;
+        background: #080808;
+        overflow: hidden;
+        border-bottom: 1px solid #1a1a1a;
+      }
+      .sound-hero h1 {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        color: #fff;
+        margin: 0;
+      }
+      .perf-section,
+      .perf-section1 {
+        width: 100%;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+      .perf-section h2,
+      .perf-section1 h2 {
+        font-family: "Oswald", sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 30px;
+        border-left: 3px solid #ff4500;
+        padding-left: 15px;
+        letter-spacing: 1px;
+      }
+
+      /* Bố cục lưới cho Game Shows */
+      .gameshow-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 4fr));
+        gap: 20px;
+      }
+      .gameshow-card {
+        background: #111;
+        border: 1px solid #1f1f1f;
+        border-radius: 6px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+      .gameshow-card:hover {
+        border-color: #ff4500;
+        background: #151211;
+      }
+      .gameshow-info h3 {
+        font-family: "Inter", sans-serif;
+        font-size: 1.05rem;
+        color: #fff;
+        margin: 0 0 4px 0;
+        font-weight: 600;
+      }
+      .gameshow-info p {
+        font-family: "Inter", sans-serif;
+        font-size: 0.85rem;
+        color: #888;
+        margin: 0;
+      }
+      .badge {
+        background: #240e0a;
+        color: #ff4500;
+        font-family: "Inter", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 5px 10px;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 69, 0, 0.3);
+      }
+
+      /* Bảng danh sách Live Shows */
+      .liveshow-table {
+        background: #111;
+        border: 1px solid #1f1f1f;
+        border-radius: 6px;
+        padding: 10px 25px;
+        margin: 0 40px;
+      }
+      .liveshow-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid #1a1a1a;
+        font-family: "Inter", sans-serif;
+        font-size: 0.95rem;
+      }
+      .liveshow-row:last-child {
+        border-bottom: none;
+      }
+      .liveshow-row span:first-child {
+        color: #ccc;
+      }
+      .liveshow-row span:last-child {
+        color: #ff4500;
+        font-weight: 600;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 1.2rem;
+      }
+
+      /* Khối Judging */
+      .judging-box {
+        background: #111;
+        border: 1px solid #1f1f1f;
+        border-radius: 6px;
+        padding: 25px 30px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        max-width: 450px;
+        transition: border-color 0.3s;
+        margin-left: 40px;
+      }
+      .judging-box:hover {
+        border-color: #ff4500;
+      }
+      .judging-year {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 3rem;
+        color: #ff4500;
+        line-height: 1;
+      }
+      .judging-details .role {
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        color: #777;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+      .judging-details .name {
+        font-family: "Inter", sans-serif;
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 600;
+        margin-top: 4px;
+      }
+
+      @media (max-width: 768px) {
+        .gameshow-grid {
+          grid-template-columns: 1fr;
+        }
+        .sound-hero h1 {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo1">
+        <img src="assets/lo.jpg" alt="Logo" />
+      </a>
+      <nav>
+        <a href="index.html" id="navOverview">Overview</a>
+        <a href="sound-engineer.html" id="navSound"
+          >Audio Director / Audio Engineer</a
+        >
+        <a href="audio-producer.html" id="navProducer">Music Producer</a>
+        <a href="performance.html" class="active" id="navPerf">Performance</a>
+      </nav>
+      <div class="lang-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('vi')">VI</button>
+      </div>
+    </header>
+
+    <section
+      class="sound-hero"
+      style="
+        position: relative;
+        padding: 120px 20px;
+        text-align: center;
+        background: #080808;
+        overflow: hidden;
+        border-bottom: 1px solid #1a1a1a;
+      "
+    >
+      <!-- Hiệu ứng vệt sáng đỏ hắt chéo nền -->
+      <div
+        style="
+          position: absolute;
+          top: -50%;
+          left: -20%;
+          right: -20%;
+          bottom: -50%;
+          background:
+            linear-gradient(
+              115deg,
+              transparent 30%,
+              rgba(160, 40, 10, 0.25) 45%,
+              transparent 50%
+            ),
+            linear-gradient(
+              125deg,
+              transparent 55%,
+              rgba(200, 50, 15, 0.2) 65%,
+              transparent 70%
+            ),
+            linear-gradient(
+              105deg,
+              transparent 20%,
+              rgba(120, 30, 5, 0.3) 35%,
+              transparent 40%
+            );
+          transform: rotate(-10deg);
+          pointer-events: none;
+        "
+      ></div>
+
+      <h1
+        id="perfHeroTitle"
+        style="
+          font-family: &quot;Inter&quot;, &quot;Oswald&quot;, sans-serif;
+          font-weight: 700;
+          font-size: 3rem;
+          letter-spacing: 2px;
+          color: #fff;
+          margin: 0;
+          position: relative;
+          z-index: 1;
+          text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+        "
+      >
+        PERFORMANCE & MUSICAL BACKGROUND
+      </h1>
+    </section>
+
+    <!-- GAME SHOWS -->
+    <section class="perf-section">
+      <h2 id="titleGameShows">Game Shows</h2>
+      <div class="gameshow-grid">
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Thần Tượng Âm Nhạc</h3>
+            <p>Vietnam Idol</p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Thần Tượng Âm Nhạc Nhí</h3>
+            <p>Vietnam Idol Kids</p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>The Remix</h3>
+            <p>Chung Kết</p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Giọng Hát Việt</h3>
+            <p>The Voice</p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Giọng Hát Việt Nhí</h3>
+            <p>The Voice Kids</p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Tuyệt Đình Song Ca</h3>
+            <p></p>
+          </div>
+          <span class="badge">THVL</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Thần Tượng Bolero</h3>
+            <p></p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Sao Đại Chiến</h3>
+            <p></p>
+          </div>
+          <span class="badge">VTV3</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Ai Sẽ Thành Sao</h3>
+            <p></p>
+          </div>
+          <span class="badge">THVL</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Ai Sẽ Thành Sao Nhí</h3>
+            <p></p>
+          </div>
+          <span class="badge">THVL</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Tiếng Hát Mãi Xanh</h3>
+            <p></p>
+          </div>
+          <span class="badge">HTV</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Sàn Đấu Ca Từ</h3>
+            <p></p>
+          </div>
+          <span class="badge">HTV7</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Giọng Ca Bất Bại</h3>
+            <p></p>
+          </div>
+          <span class="badge">HTV7</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Sô Diễn Cuộc Đời</h3>
+            <p></p>
+          </div>
+          <span class="badge">HTV7</span>
+        </div>
+        <div class="gameshow-card">
+          <div class="gameshow-info">
+            <h3>Dấu Ấn Huyền Thoại</h3>
+            <p></p>
+          </div>
+          <span class="badge">HTV7</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE SHOWS -->
+    <!-- LIVE SHOWS -->
+    <section class="perf-section">
+      <h2 id="titleLiveShows">Live Shows</h2>
+      <div class="liveshow-table">
+        <div class="liveshow-row">
+          <span>Live Show Noo Phước Thịnh</span><span>2016</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Live Show Thu Minh Fire Phonenix</span><span>2016</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Master Ruma Hoà Nhạc - Cambodia</span><span>2017</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Pro Sound Vietnam</span><span>2018-2019</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Festival Dj VietNam</span><span>2019</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Hozo Festival</span><span>2019</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Đại nhạc hội The Phoenix Empire</span><span>2020</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Hội Festival</span><span>2020-2022</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Lumos Fetival (France)</span><span>2020</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Yamaha Roadtrip</span><span>2021-2022</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Những Thành Phố Mơ Màng</span><span>2022-2023</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Heineken Aftermovie</span><span>2022</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Live Show Trịnh Thăng Bình</span><span>2022</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Festival Biển Nha Trang</span><span>2023</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Festival Bình Thuận</span><span>2023</span>
+        </div>
+        <div class="liveshow-row">
+          <span>My Soul 1981 - Mỹ Tâm</span><span>2023</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Hiff - Ho Chi Minh City International Flim Festival</span
+          ><span>2024</span>
+        </div>
+        <div class="liveshow-row">
+          <span>Sketch A Rose in Sai Gon - Hà Anh Tuấn</span><span>2025</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- JUDGING -->
+    <section class="perf-section1">
+      <h2 id="titleJudging">Judging</h2>
+      <div class="judging-box">
+        <div class="judging-year">2024</div>
+        <div class="judging-details">
+          <div class="role" id="roleJudge">Judge</div>
+          <div class="name">MixWiz Viet Nam</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>Hau Tran</h3>
+        <p>
+          Sound engineer and audio producer working at the intersection of
+          technical precision and creative instinct.
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/tran.haudrum/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <p>Facebook</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Overview</a>
+        <a href="sound-engineer.html">Audio Director / Audio Engineer</a>
+        <a href="audio-producer.html">Music Producer</a>
+        <a href="performance.html">Performance</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: tranhauaudio@gmail.com</p>
+        <p>Phone: 0984 123 494</p>
+        <p>Location: Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>© 2025 Trung Kien & Truc Vy. All rights reserved.</p>
+      <p>Designed for Sound. Built for Impact.</p>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

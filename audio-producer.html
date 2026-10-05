@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Producer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo1">
+        <img src="assets/lo.jpg" alt="Logo" />
+      </a>
+      <nav>
+        <a href="index.html" id="navOverview">Overview</a>
+        <a href="sound-engineer.html" id="navSound"
+          >Audio Director / Audio Engineer</a
+        >
+        <a href="audio-producer.html" class="active" id="navProducer"
+          >Music Producer</a
+        >
+        <a href="performance.html" id="navPerf">Performance</a>
+      </nav>
+      <div class="lang-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('vi')">VI</button>
+      </div>
+    </header>
+
+    <section class="producer-hero">
+      <div class="rings"></div>
+      <h1 id="producerTitle">Music Producer</h1>
+      <p id="producerDesc">
+        Original compositions. Beat production. Film scoring.
+      </p>
+    </section>
+
+    <section class="genre-row">
+      <div class="genre-track">
+        <span>Cinematic</span>
+        <span>Pop</span>
+        <span>R&B</span>
+        <span>Ambient</span>
+        <span>Hip-Hop</span>
+        <span>Electronic</span>
+        <span>Acoustic</span>
+        <span>Jazz</span>
+        <span>Neo-Soul</span>
+        <span>Indie</span>
+      </div>
+    </section>
+
+   <!-- FEATURED PRODUCTIONS & TRACK LINKS -->
+  <section class="productions">
+    <h2 style="margin-top: 20px;">Featured Productions & Audio Samples</h2>
+
+    <div class="production-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+      
+      <!-- Sản phẩm 1: Trốn Tìm -->
+      <div class="production-item" style="background-image: url('assets/trontim.png'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">Đen Vâu — “Trốn Tìm”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">Recording & Audio Engineering</span>
+          <a href="https://youtu.be/Ws-QlpSltr8?list=RDWs-QlpSltr8" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+
+      <!-- Sản phẩm 2: Ai muốn nghe không -->
+      <div class="production-item" style="background-image: url('assets/aimuon.png'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">“Ai muốn nghe không”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">Music Production & Mix</span>
+          <a href="https://youtu.be/JxBnLmCOEJ8?list=RDJxBnLmCOEJ8" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+
+      <!-- Sản phẩm 3: Diễn viên tồi -->
+      <div class="production-item" style="background-image: url('assets/denvau.jpg'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">“Diễn viên tồi”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">Original Composition & Beats</span>
+          <a href="https://youtu.be/7ICKkagL3xA?list=RD7ICKkagL3xA" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+
+
+      <!--  TRẦN MẠNH HÙNG -->
+      <div class="production-item" style="background-image: url('assets/manhhung.png'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">“DIỆU ÂM CA - GURUJI SAGARRUMAGARMATHA”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">SAIGON CHOIR</span>
+          <a href="https://youtu.be/s32nh04WApE?si=7SrNHy-nLhuyb4kG" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+
+
+      <!-- NGUYỄN HÙNG -->
+      <div class="production-item" style="background-image: url('assets/denvau.jpg'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">“CÒN GÌ ĐẸP HƠN ”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">SAIGON CHOIR</span>
+          <a href="https://youtu.be/-h_xB2-MgfQ?si=9o2S2pGN0ul-nIvq" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+
+      <!-- LƯU HÀ AN -->
+      <div class="production-item" style="background-image: url('assets/denvau.jpg'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">“CON CÒ (THE STORK)”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">SAIGON CHOIR</span>
+          <a href="https://youtu.be/Nb3mAwLelWI?si=8QQhP4ryB9OUGlF3" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Chanh -->
+      <div class="production-item" style="background-image: url('assets/denvau.jpg'); background-size: cover; background-position: center; position: relative;">
+        <div class="production-overlay" style="display: flex; flex-direction: column; justify-content: flex-end; height: 100%; padding: 20px;">
+          <p style="margin: 0 0 5px 0; font-weight: bold;">“The Infinite Ocean / Guitar Sang ”</p>
+          <span style="display: block; margin-bottom: 10px; color: #ff5722; font-size: 13px;">Original Composition & Beats</span>
+          <a href="https://youtu.be/x6NghAF-kms?si=WP9oEwm8ms20MId8" target="_blank" class="track-link-btn" style="display: inline-block; padding: 6px 12px; background: #ff5722; color: #fff; text-decoration: none; border-radius: 4px; font-size: 14px; text-align: center;">
+            <i class="fas fa-play"></i> Nghe bài hát
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>Hau Tran</h3>
+        <p>
+          Sound engineer and audio producer working at the intersection of
+          technical precision and creative instinct.
+        </p>
+        <div class="social">
+           <a href="https://www.facebook.com/tran.haudrum/"><i class="fab fa-facebook-f"></i></a> <p>Facebook</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="index.html">Overview</a>
+        <a href="sound-engineer.html">Audio Director / Audio Engineer</a>
+        <a href="audio-producer.html">Music Producer</a>
+        <a href="performance.html">Performance & Musical Background</a>
+      </div>
+
+      
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: tranhauaudio@gmail.com</p>
+        <p>Phone: 0984 123 494</p>
+        <p>Location: Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>© 2025 Trung Kien & Truc Vy. All rights reserved.</p>
+      <p>Designed for Sound. Built for Impact.</p>
+    </div>
+
+    <script src="lang.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

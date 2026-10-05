@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audio Director / Audio Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .sound-work-item.extra-show {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo1">
+    <img src="assets/lo.jpg" alt="Logo">
+  </a>
+  <nav>
+    <a href="index.html" id="navOverview">Overview</a>
+    <a href="sound-engineer.html" class="active" id="navSound">Audio Director / Audio Engineer</a>
+    <a href="audio-producer.html" id="navProducer">Music Producer</a>
+    <a href="performance.html" id="navPerf">Performance</a>
+  </nav>
+  <div class="lang-switch">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('vi')">VI</button>
+  </div>
+</header>
+
+<section class="sound-hero">
+  <div class="sound-bg"></div>
+  <div class="wave">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <h1 id="soundTitle">Audio Director / Audio Engineer</h1>
+  <p id="soundDesc">Live Sound. Studio Recording. Audio Post - Production</p>
+</section>
+
+<!-- SELECTED WORK -->
+<section class="sound-work">
+  <h2>Featured Shows</h2>
+
+  <div class="sound-work-grid" id="soundWorkGrid">
+      <div class="sound-work-item showcase-slider">
+        <img src="assets/image/1. Vesak Liên Hợp Quốc 2025/1.png" class="active">
+        <img src="assets/image/1. Vesak Liên Hợp Quốc 2025/4.jpg">
+        <img src="assets/image/1. Vesak Liên Hợp Quốc 2025/phu07437-17466296340211975867000.jpg">
+        <div class="sound-overlay">
+          <p>Vesak Liên Hợp Quốc 2025</p>
+        </div>
+      </div>
+
+       <div class="sound-work-item showcase-slider">
+        <img src="assets/image2/Grand Opus Piano Competition GOPC 2024/IMG_8359.JPG" class="active">
+        <img src="assets/image2/Grand Opus Piano Competition GOPC 2024/IMG_8360.JPG">
+        <img src="assets/image2/Grand Opus Piano Competition GOPC 2024/IMG_8361.JPG">
+        <div class="sound-overlay">
+          <p>Grand Opus Piano Competition GOPC 2024</p>          
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider">
+        <img src="assets/image/2. Sound Healing Concert 2026/07E82560-D24B-4DC6-A290-BD4B47B7B992.png" class="active">
+        <img src="assets/image/2. Sound Healing Concert 2026/IMG_2305.JPG">
+        <img src="assets/image/2. Sound Healing Concert 2026/IMG_2307.JPG">
+        <img src="assets/image/2. Sound Healing Concert 2026/IMG_2308.JPG">
+        <img src="assets/image/2. Sound Healing Concert 2026/IMG_2309.JPG">
+        <div class="sound-overlay">
+          <p>Sound Healing Concert 2026</p>          
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider">
+        <img src="assets/image/3. HD Bank Lời Cho Tương Lai Concert/IMG_2310.JPG" class="active">
+        <img src="assets/image/3. HD Bank Lời Cho Tương Lai Concert/IMG_2311.JPG">
+        <img src="assets/image/3. HD Bank Lời Cho Tương Lai Concert/IMG_2312.JPG">
+        <img src="assets/image/3. HD Bank Lời Cho Tương Lai Concert/IMG_2313.JPG">
+        <img src="assets/image/3. HD Bank Lời Cho Tương Lai Concert/IMG_2314.JPG">
+        <img src="assets/image/3. HD Bank Lời Cho Tương Lai Concert/IMG_2315.JPG">
+        <div class="sound-overlay">
+          <p>HD Bank Lời Cho Tương Lai Concert</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider">
+        <img src="assets/image/4. Disney Concert/IMG_8455.JPG" class="active">
+        <img src="assets/image/4. Disney Concert/IMG_8456.JPG">
+        <img src="assets/image/4. Disney Concert/IMG_8457.JPG">
+        <div class="sound-overlay">
+          <p>Disney Concert</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/5. Hội Thuần Hội 2024/IMG_8498.JPG" class="active">
+        <img src="assets/image/5. Hội Thuần Hội 2024/IMG_8501.JPG">
+        <img src="assets/image/5. Hội Thuần Hội 2024/IMG_8502.JPG">
+        <div class="sound-overlay">
+          <p>Hội Thuần Hội 2024</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/6. Ghibli Concert/IMG_8482.JPG" class="active">
+        <img src="assets/image/6. Ghibli Concert/IMG_8483.JPG">
+        <img src="assets/image/6. Ghibli Concert/IMG_8484.JPG">
+        <img src="assets/image/6. Ghibli Concert/IMG_8485.JPG">
+        <div class="sound-overlay">
+          <p>Ghibli Concert</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8430.JPG" class="active">
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8431.JPG">
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8432.JPG">
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8433.JPG">
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8434.JPG">
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8449.JPG">
+      
+        <img src="assets/image/7. Yêu Hoà Bình 2022-2023-2024/IMG_8461.JPG">
+        <div class="sound-overlay">
+          <p>Yêu Hoà Bình 2022-2023-2024</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/9. Just Rock 2024/IMG_8469.JPG" class="active">
+        <img src="assets/image/9. Just Rock 2024/IMG_8470.JPG">
+        <img src="assets/image/9. Just Rock 2024/IMG_8471.JPG">
+        <img src="assets/image/9. Just Rock 2024/IMG_8473.JPG">
+        <img src="assets/image/9. Just Rock 2024/IMG_8474.JPG">
+        <img src="assets/image/9. Just Rock 2024/IMG_8475.JPG">
+        <div class="sound-overlay">
+          <p>Just Rock 2024</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/10. La Musica Fes/607722145_122112371883141145_6497519304125968365_n.jpg" class="active">
+        <img src="assets/image/10. La Musica Fes/619373791_122116531899141145_1076480621119345369_n.jpg">
+        <img src="assets/image/10. La Musica Fes/626686998_122117586009141145_5643325806134797381_n.jpg">
+        <img src="assets/image/10. La Musica Fes/IMG_2331.JPG">
+        <img src="assets/image/10. La Musica Fes/IMG_2334.JPG">
+        <div class="sound-overlay">
+          <p>La Musica Fes</p>
+        </div>
+      </div>
+
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/11. Acecook Concert/IMG_2339.JPG" class="active">
+        <img src="assets/image/11. Acecook Concert/IMG_2340.JPG">
+        <div class="sound-overlay">
+          <p>Acecook Happiness Concert 30 Years Of Acecook VietNam’s</p>
+        </div>
+      </div>
+      
+      <div class="sound-work-item showcase-slider extra-show">
+        <img src="assets/image/12. In Gratitude - Concert/IMG_2323.JPG" class="active">
+        <img src="assets/image/12. In Gratitude - Concert/IMG_2328.JPG">
+        <img src="assets/image/12. In Gratitude - Concert/IMG_2329.JPG">
+        <img src="assets/image/12. In Gratitude - Concert/IMG_9562.JPG">
+        <div class="sound-overlay">
+          <p>In Gratitude - Concert</p>
+        </div>
+      </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <button id="showFeaturedBtn" class="show-toggle" style="padding: 10px 25px; cursor: pointer;">Show All</button>
+  </div>
+
+  <!-- OTHER SHOWS -->
+  <div class="other-shows" style="margin-top: 50px;">
+    <h3>Other Shows</h3>
+    <div class="show-list">
+      <div class="show-row" data-gallery="assets/image2/1. Dept Asia Tour - Live in Viet Nam 2024/IMG_8371.JPG,assets/image2/1. Dept Asia Tour - Live in Viet Nam 2024/IMG_8372.JPG,assets/image2/1. Dept Asia Tour - Live in Viet Nam 2024/IMG_8373.JPG,assets/image2/1. Dept Asia Tour - Live in Viet Nam 2024/IMG_8374.JPG">
+        <span>Dept Asia Tour - Live in Viet Nam 2024</span>
+        <small>Live Sound</small>
+      </div>
+      
+      <div class="show-row" data-gallery="assets/image2/2. Đại nhạc hội Shopee Food/1.png">
+        <span>Đại nhạc hội Shopee Food</span>
+        <small>Festival</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/3. Anika Nilles World Tour in Viet Nam 2024/IMG_8397.JPG,assets/image2/3. Anika Nilles World Tour in Viet Nam 2024/IMG_8398.JPG,assets/image2/3. Anika Nilles World Tour in Viet Nam 2024/IMG_8399.JPG">
+        <span>Anika Nilles World Tour in Viet Nam 2024</span>
+        <small>World Tour</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/4. Grammy Award Winner Sangeeta Kaur/IMG_8494.JPG,assets/image2/4. Grammy Award Winner Sangeeta Kaur/IMG_8495.JPG,assets/image2/4. Grammy Award Winner Sangeeta Kaur/IMG_8496.JPG">
+        <span>Grammy Award Winner Sangeeta Kaur</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/5. Ichika Nito World Tour in Vietnam 2023/IMG_8400.JPG,assets/image2/5. Ichika Nito World Tour in Vietnam 2023/IMG_8401.JPG,assets/image2/5. Ichika Nito World Tour in Vietnam 2023/IMG_8402.JPG">
+        <span>Ichika Nito World Tour in Vietnam 2023</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/6. New Hope Club live in Vietnam 2022/IMG_8412.JPG,assets/image2/6. New Hope Club live in Vietnam 2022/IMG_8413.JPG,assets/image2/6. New Hope Club live in Vietnam 2022/IMG_8414.JPG,assets/image2/6. New Hope Club live in Vietnam 2022/IMG_8415.JPG,assets/image2/6. New Hope Club live in Vietnam 2022/IMG_8416.JPG,assets/image2/6. New Hope Club live in Vietnam 2022/IMG_8417.JPG">
+        <span>New Hope Club live in Vietnam 2022</span>
+        <small>Live Show</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/7. +84 Showcase 2024/IMG_8366.JPG,assets/image2/7. +84 Showcase 2024/IMG_8367.JPG,assets/image2/7. +84 Showcase 2024/IMG_8368.JPG">
+        <span>+84 Showcase 2024</span>
+        <small>Live Sound</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/8 The Theatre - Rock Concert/IMG_8389.JPG,assets/image2/8 The Theatre - Rock Concert/IMG_8390.JPG,assets/image2/8 The Theatre - Rock Concert/IMG_8391.JPG,assets/image2/8 The Theatre - Rock Concert/IMG_8392.JPG,assets/image2/8 The Theatre - Rock Concert/IMG_8393.JPG,assets/image2/8 The Theatre - Rock Concert/IMG_8394.JPG">
+        <span>The Theatre - Rock Concert</span>
+        <small>Rock Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/9. A Tale Of Two Christmas/IMG_8458.JPG,assets/image2/9. A Tale Of Two Christmas/IMG_8459.JPG">
+        <span>A Tale Of Two Christmas</span>
+        <small>Live Sound</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8486.JPG,assets/IMG_8487.JPG,assets/IMG_8489.JPG,assets/IMG_8490.JPG">
+        <span>Biển Của Hy Vọng 2022</span>
+        <small>Live Sound</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Chopin Concerto No.2 - Bich Tra Nguyen & Tran Nhat Minh/IMG_8591.JPG,assets/image2/Chopin Concerto No.2 - Bich Tra Nguyen & Tran Nhat Minh/IMG_8592.JPG">
+        <span>Chopin Concerto No.2 - Bich Tra Nguyen & Tran Nhat Minh</span>
+        <small>Orchestra</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Christmas Crescendo  Concert 2022/IMG_8526.JPG,assets/image2/Christmas Crescendo  Concert 2022/IMG_8527.JPG,assets/image2/Christmas Crescendo  Concert 2022/IMG_8528.JPG,assets/image2/Christmas Crescendo  Concert 2022/IMG_8529.JPG,assets/image2/Christmas Crescendo  Concert 2022/IMG_8530.JPG">
+        <span>Christmas Crescendo Concert 2022</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/CROSSROADS THE UNTOLD STORIES/IMG_8460.JPG,assets/image2/CROSSROADS THE UNTOLD STORIES/IMG_8461.JPG,assets/image2/CROSSROADS THE UNTOLD STORIES/IMG_8462.JPG">
+        <span>CROSSROADS THE UNTOLD STORIES</span>
+        <small>Live Show</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/DOC MusicShow 2024/IMG_8570.JPG,assets/image2/DOC MusicShow 2024/IMG_8571.JPG">
+        <span>DOC MusicShow 2024</span>
+        <small>Music Show</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8491.JPG,assets/IMG_8492.JPG,assets/IMG_8493.JPG">
+        <span>Game Show Người Yêu Tôi Đỉnh Nhất 2024</span>
+        <small>Game Show</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Grand Opus Piano Competition GOPC 2023/IMG_8362.JPG,assets/image2/Grand Opus Piano Competition GOPC 2023/IMG_8363.JPG,assets/image2/Grand Opus Piano Competition GOPC 2023/IMG_8364.JPG,assets/image2/Grand Opus Piano Competition GOPC 2023/IMG_8365.JPG">
+        <span>Grand Opus Piano Competition GOPC 2023</span>
+        <small>Special Event</small>
+      </div>
+      
+      <div class="show-row" data-gallery="assets/image2/Hội Báo Toàn Quốc 2024/IMG_8476.JPG,assets/image2/Hội Báo Toàn Quốc 2024/IMG_8478.JPG,assets/image2/Hội Báo Toàn Quốc 2024/IMG_8479.JPG,assets/image2/Hội Báo Toàn Quốc 2024/IMG_8480.JPG,assets/image2/Hội Báo Toàn Quốc 2024/IMG_8481.JPG">
+        <span>Hội Báo Toàn Quốc 2024</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8555.JPG">
+        <span>Họp Báo Công Bổ Live Concert Uyên Linh 2024</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8557.JPG,assets/IMG_8559.JPG">
+        <span>Họp Báo Quốc Thiên Skynote Concert</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8551.JPG,assets/IMG_8552.JPG">
+        <span>Họp Báo Ra Mắt MV Hồ Quỳnh Hương</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Jack Gardiner – Asia Tour 2026 _ Vietnam/IMG_1046.JPG">
+        <span>Jack Gardiner – Asia Tour 2026 - Vietnam</span>
+        <small>Tour</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8546.JPG,assets/IMG_8547.JPG,assets/image2/Lễ Công Bố Khơi Động Liên Hoang Phim Quốc Tế TP.HCM 2024/IMG_8548.JPG,assets/image2/Lễ Công Bố Khơi Động Liên Hoang Phim Quốc Tế TP.HCM 2024/IMG_8549.JPG,assets/image2/Lễ Công Bố Khơi Động Liên Hoang Phim Quốc Tế TP.HCM 2024/IMG_8550.JPG">
+        <span>Lễ Công Bố Khơi Động Liên Hoang Phim Quốc Tế TP.HCM 2024</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_0820.JPG,assets/IMG_0821.JPG,assets/IMG_8385.JPG,assets/IMG_8386.JPG,assets/IMG_8387.JPG,assets/IMG_8388.JPG">
+        <span>Live Show Nguyễn Hải Phong Symphony - Orchestra 2022</span>
+        <small>Special Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Mẹ Là Tình Yêu Mùa 6 - Live Concert/IMG_2316.JPG,assets/image2/Mẹ Là Tình Yêu Mùa 6 - Live Concert/IMG_2317.JPG,assets/image2/Mẹ Là Tình Yêu Mùa 6 - Live Concert/IMG_2318.JPG">
+        <span>Mẹ Là Tình Yêu Mùa 6 - Live Concert</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Motul Festival 2024/IMG_8403.JPG,assets/image2/Motul Festival 2024/IMG_8404.JPG,assets/image2/Motul Festival 2024/IMG_8405.JPG,assets/image2/Motul Festival 2024/IMG_8406.JPG,assets/image2/Motul Festival 2024/IMG_8407.JPG">
+        <span>Motul Festival 2024</span>
+        <small>Festival</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/RockinMUSEUM/IMG_2319.JPG,assets/image2/RockinMUSEUM/IMG_2320.JPG,assets/image2/RockinMUSEUM/IMG_2321.JPG">
+        <span>RockinMUSEUM</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Saigon Tatto Expo 2024/IMG_8463.JPG,assets/image2/Saigon Tatto Expo 2024/IMG_8464.JPG,assets/image2/Saigon Tatto Expo 2024/IMG_8465.JPG,assets/image2/Saigon Tatto Expo 2024/IMG_8466.JPG,assets/image2/Saigon Tatto Expo 2024/IMG_8467.JPG,assets/image2/Saigon Tatto Expo 2024/IMG_8468.JPG">
+        <span>Saigon Tatto Expo 2024</span>
+        <small>Expo</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8419.JPG,assets/IMG_8420.JPG,assets/IMG_8421.JPG,assets/IMG_8422.JPG">
+        <span>Showcase Jun Pham 2024</span>
+        <small>Showcase</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Sound Healing Concert 6 Senses/IMG_8464.JPG,assets/image2/Sound Healing Concert 6 Senses/IMG_8465.JPG,assets/image2/Sound Healing Concert 6 Senses/IMG_8466.JPG,assets/image2/Sound Healing Concert 6 Senses/IMG_8467.JPG">
+        <span>Sound Healing Concert 6 Senses</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/Sound Of Animeshon Concert 2023/IMG_8380.JPG,assets/image2/Sound Of Animeshon Concert 2023/IMG_8381.JPG,assets/image2/Sound Of Animeshon Concert 2023/IMG_8383.JPG,assets/image2/Sound Of Animeshon Concert 2023/IMG_8384.JPG">
+        <span>Sound Of Animeshon Concert 2023</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/fuyu.png">
+        <span>Tama Drum - Fuyu Clinic Tour 2026</span>
+        <small>Clinic Tour</small>
+      </div>
+      <div class="show-row" data-gallery="assets/image2/The Pianist Voice Of The New Generation Concert 2023/IMG_8521.JPG,assets/image2/The Pianist Voice Of The New Generation Concert 2023/IMG_8523.JPG,assets/image2/The Pianist Voice Of The New Generation Concert 2023/IMG_8525.JPG">
+        <span>The Pianist Voice Of The New Generation Concert 2023</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/IMG_8425.PNG,assets/IMG_8426.PNG,assets/IMG_8427.PNG">
+        <span>Viettel Hành Trình Kết Nối 0 Đồng - 2022</span>
+        <small>Event</small>
+      </div>
+      <div class="show-row" data-gallery="assets/K-Drama OST Concert 2025/IMG_2395.JPG,assets/K-Drama OST Concert 2025/IMG_2396.JPG">
+        <span>K-Drama OST Concert 2025</span>
+        <small>Concert</small>
+      </div>
+      <div class="show-row" data-gallery="assets/Musicland Festival/IMG_2391.JPG,assets/Musicland Festival/IMG_2392.JPG,assets/Musicland Festival/IMG_2393.JPG">
+        <span>Musica land Fes</span>
+        <small>Fes</small>
+      </div>
+      <div class="show-row" data-gallery="assets/Ocean by Night - Singapore/IMG_2396.JPG,assets/Ocean by Night - Singapore/IMG_2397.JPG">
+        <span>Ocean by Night - Singapore</span>
+        <small>Fes</small>
+      </div>
+       <div class="show-row" data-gallery="assets/Rise Of The Underdogs - Rotu 2 - 2025/485148583_986880500302544_95470294653429835_n.jpg,assets/Rise Of The Underdogs - Rotu 2 - 2025/485149949_986884460302148_3970737936163161354_n.jpg,assets/Rise Of The Underdogs - Rotu 2 - 2025/485766874_986880396969221_4337154923486061724_n.jpg,assets/Rise Of The Underdogs - Rotu 2 - 2025/485801994_986884530302141_3819594107450007919_n (1).jpg,assets/Rise Of The Underdogs - Rotu 2 - 2025/486372283_986877880302806_4119104334965541288_n.jpg">
+        <span>Rise Of The Underdogs - Rotu 2 - 2025</span>
+        <small>Fes</small>
+      </div>
+
+      <div class="show-row" data-gallery="assets/Saigon Choir Concert - Hạt Dẻ 3/IMG_2398.JPG,assets/Saigon Choir Concert - Hạt Dẻ 3/IMG_2399.JPG,assets/Saigon Choir Concert - Hạt Dẻ 3/IMG_2400.JPG,assets/Saigon Choir Concert - Hạt Dẻ 3/IMG_2401.JPG">
+        <span>Saigon Choir Concert - Hạt dẻ 3</span>
+        <small>Concert</small>
+      </div>
+    </div>
+    <button class="show-toggle" id="showToggle">Show All</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-col">
+    <h3>Hau Tran</h3>
+    <p>
+      Sound engineer and audio producer working at the intersection 
+      of technical precision and creative instinct.
+    </p>
+    <div class="social">
+      <a href="https://www.facebook.com/tran.haudrum/"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-col">
+    <h4>Navigation</h4>
+    <a href="index.html">Overview</a>
+    <a href="sound-engineer.html">Audio Director / Audio Engineer</a>
+    <a href="audio-producer.html">Music Producer</a>
+    <a href="performance.html">Performance</a>
+  </div>
+
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <p>Email: tranhauaudio@gmail.com</p>
+    <p>Phone: 0984 123 494</p>
+    <p>Location: Ho Chi Minh City</p>
+  </div>
+</footer>
+
+<div class="footer-bottom">
+  <p>© 2025 Trung Kien & Truc Vy. All rights reserved.</p>
+  <p>Designed for Sound. Built for Impact.</p>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <span class="close-btn" id="closeBtn">&times;</span>
+  <button class="nav-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+  <img id="lightboxImg">
+  <button class="nav-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<script src="lang.js"></script>
+<script src="scripts.js"></script>
+<script>
+  const showFeaturedBtn = document.getElementById('showFeaturedBtn');
+  const extraShows = document.querySelectorAll('.extra-show');
+  let isExpanded = false;
+
+  if(showFeaturedBtn) {
+    showFeaturedBtn.addEventListener('click', function() {
+      isExpanded = !isExpanded;
+      extraShows.forEach(item => {
+        item.style.display = isExpanded ? 'block' : 'none';
+      });
+      showFeaturedBtn.textContent = isExpanded ? 'Show Less' : 'Show All';
+    });
+  }
+</script>
+</body>
+</html>
