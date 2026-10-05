@@ -5,11 +5,16 @@ const translations = {
     navProducer: "Music Producer",
     navPerformance: "Performance & Musical Background",
 
+    // Phần giới thiệu mới (Tiếng Anh)
+    aboutTitle: "HAU TRAN",
+    aboutQuote: "“Sound to me doesn't start with equipment, it starts with music and the artist.”",
+    aboutDesc: "Starting out as a professional musician, I came to sound through years of standing on stage. Performance experience has taught me that sound must not only be clear and beautiful, but must also capture the spirit of the artist and the emotion of the performance. Therefore, I always begin by listening — listening to the artist, the space, and the music — so that the sound blends naturally into the stage.",
+
     chooseSoundTitle: "Audio Director / Audio Engineer",
     chooseSoundDesc: "Live Sound. Studio Recording. Audio Post - Production",
     chooseProducerTitle: "Music Producer",
     chooseProducerDesc: "Live Sound. Studio Recording. Audio Post - Production.",
-    choosePerformanceTitle: "Performance & Musical Background",
+    choosePerformanceTitle: "MUSICAL BACKROUND /PERFORMANCE",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
 
     explore: "Explore →",
@@ -19,7 +24,7 @@ const translations = {
     statArtists: "Artists Worked With",
     statAwards: "Awards & Recognition",
 
-    perfTitle: "PERFORMANCE & MUSICAL BACKGROUND",
+    perfTitle: "MUSICAL BACKROUND /PERFORMANCE",
     gameShowsTitle: "Game Shows",
     liveShowsTitle: "Live Shows",
     judgingTitle: "Judging",
@@ -71,8 +76,6 @@ const translations = {
       "Emotional soundtracks and cues for short films, ads, and campaigns.",
     collaborationsTitle: "Featured Collaborations",
 
-    footerDesc:
-      "Sound engineer and audio producer working at the intersection of technical precision and creative instinct.",
     footerNavigation: "Navigation",
     footerServices: "Services",
     footerContact: "Contact",
@@ -84,27 +87,30 @@ const translations = {
     footerBottom: "Designed for Sound. Built for Impact.",
 
     footerTitle: "Hau Tran",
-    footerDesc: "Sound engineer and audio producer working at the intersection of technical precision and creative instinct.",
     footerNavTitle: "Navigation",
     footerContactTitle: "Contact",
-    footerLocation: "Location: Ho Chi Minh City",
   },
 
   vi: {
     navOverview: "Tổng Quan",
     navSound: "Kỹ Sư Âm Thanh",
     navProducer: "Nhà Sản Xuất Âm Nhạc",
-    navPerformance: "Biểu Diễn & Nền Tảng Âm Nhạc",
+    navPerformance: "Nền tảng âm nhạc / Biểu diễn",
+
+    // Phần giới thiệu mới (Tiếng Việt)
+    aboutTitle: "TRẦN HẬU",
+    aboutQuote: "“Âm thanh với tôi không bắt đầu từ thiết bị, mà bắt đầu từ âm nhạc và người nghệ sĩ”",
+    aboutDesc: "Xuất phát từ một nhạc công chuyên nghiệp, tôi đến với âm thanh từ những năm tháng đứng trên sân khấu. Trải nghiệm biểu diễn giúp tôi hiểu rằng âm thanh không chỉ cần rõ và đẹp, mà còn phải giữ được tinh thần của người nghệ sĩ và cảm xúc của màn trình diễn. Vì vậy, tôi luôn bắt đầu bằng sự lắng nghe — lắng nghe nghệ sĩ, không gian và âm nhạc — để âm thanh hòa vào sân khấu một cách tự nhiên.",
 
     chooseSoundTitle: "Kỹ Sư Âm Thanh",
     chooseSoundDesc: "Âm thanh trực tiếp. Thu âm phòng thu. Hậu kỳ âm thanh.",
     chooseProducerTitle: "Nhà Sản Xuất Âm Nhạc",
     chooseProducerDesc: "Âm thanh trực tiếp. Thu âm phòng thu. Hậu kỳ âm thanh.",
     explore: "Khám phá →",
-    choosePerformanceTitle: "Biểu Diễn & Nền Tảng Âm Nhạc",
+    choosePerformanceTitle: "Nền tảng âm nhạc / Biểu diễn",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
 
-    perfTitle: "BIỂU DIỄN & NỀN TẢNG ÂM NHẠC",
+    perfTitle: "NỀN TẢNG ÂM NHẠC / BIỂU DIỄN",
     gameShowsTitle: "Chương Trình Game Show",
     liveShowsTitle: "Chương Trình Trực Tiếp ",
     judgingTitle: "Công Tác Giám Khảo",
@@ -164,8 +170,6 @@ const translations = {
       "Soundtrack và cue giàu cảm xúc cho phim ngắn, quảng cáo và chiến dịch truyền thông.",
     collaborationsTitle: "Dự Án Hợp Tác Nổi Bật",
 
-    footerDesc:
-      "Kỹ sư âm thanh và nhà sản xuất âm nhạc làm việc tại giao điểm giữa độ chính xác kỹ thuật và cảm xúc sáng tạo.",
     footerNavigation: "Điều Hướng",
     footerServices: "Dịch Vụ",
     footerContact: "Liên Hệ",
@@ -177,13 +181,9 @@ const translations = {
     footerBottom: "Thiết kế cho âm thanh. Tạo nên dấu ấn.",
 
     footerTitle: "Hậu Trần",
-    footerDesc: "Kỹ sư âm thanh và nhà sản xuất âm nhạc làm việc tại giao điểm giữa độ chính xác kỹ thuật và cảm xúc sáng tạo.",
     footerNavTitle: "Điều Hướng",
     footerContactTitle: "Liên Hệ",
-    footerLocation: "Địa điểm: TP. Hồ Chí Minh",
   },
-
-  
 };
 
 function setLanguage(lang) {
@@ -200,6 +200,11 @@ function setLanguage(lang) {
   setText("navSound", t.navSound);
   setText("navProducer", t.navProducer);
   setText("navPerf", t.navPerformance);
+
+  // Cập nhật phần giới thiệu mới
+  setText("aboutTitle", t.aboutTitle);
+  setText("aboutQuote", t.aboutQuote);
+  setText("aboutDesc", t.aboutDesc);
 
   setText("soundTitle", t.soundTitle);
   setText("soundDesc", t.soundDesc);
@@ -222,7 +227,6 @@ function setLanguage(lang) {
 
   // Cập nhật Footer
   setText("footerTitle", t.footerTitle);
-  setText("footerDesc", t.footerDesc);
   setText("footerNavTitle", t.footerNavTitle);
   setText("footerNavOverview", t.navOverview);
   setText("footerNavSound", t.navSound);
@@ -306,16 +310,13 @@ function setLanguage(lang) {
     createCards[1].querySelector("h3").innerText = t.beatTitle;
     createCards[1].querySelector("p").innerText = t.beatDesc;
 
-    createCards[2].querySelector("h3").innerText = t.filmTitle;
+    createCards[2].querySelector("h3").innerText, t.filmTitle;
     createCards[2].querySelector("p").innerText = t.filmDesc;
   }
 
   const collaborationsTitle = document.querySelector(".productions h2");
   if (collaborationsTitle)
     collaborationsTitle.innerText = t.collaborationsTitle;
-
-  const footerDesc = document.querySelector(".footer-col:first-child p");
-  if (footerDesc) footerDesc.innerText = t.footerDesc;
 
   const footerCols = document.querySelectorAll(".footer-col");
   if (footerCols.length >= 4) {
@@ -357,6 +358,6 @@ function setLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "en";
+  const savedLang = localStorage.getItem("lang") || "vi";
   setLanguage(savedLang);
 });
