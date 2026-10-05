@@ -8,7 +8,7 @@ const translations = {
     chooseSoundTitle: "Audio Director / Audio Engineer",
     chooseSoundDesc: "Live Sound. Studio Recording. Audio Post - Production",
     chooseProducerTitle: "Music Producer",
-    chooseProducerDesc: "Original compositions. Beats. Film scoring.",
+    chooseProducerDesc: "Live Sound. Studio Recording. Audio Post - Production.",
     choosePerformanceTitle: "Performance & Musical Background",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
 
@@ -58,7 +58,7 @@ const translations = {
     showLess: "Show Less",
 
     producerTitle: "Music Producer",
-    producerDesc: "Original compositions. Beat production. Film scoring.",
+    producerDesc: "Live Sound. Studio Recording. Audio Post - Production ",
     createTitle: "What I Create",
     originalTitle: "Original Composition",
     originalDesc:
@@ -99,7 +99,7 @@ const translations = {
     chooseSoundTitle: "Kỹ Sư Âm Thanh",
     chooseSoundDesc: "Âm thanh trực tiếp. Thu âm phòng thu. Hậu kỳ âm thanh.",
     chooseProducerTitle: "Nhà Sản Xuất Âm Nhạc",
-    chooseProducerDesc: "Sáng tác nhạc. Sản xuất beat. Nhạc phim.",
+    chooseProducerDesc: "Âm thanh trực tiếp. Thu âm phòng thu. Hậu kỳ âm thanh.",
     explore: "Khám phá →",
     choosePerformanceTitle: "Biểu Diễn & Nền Tảng Âm Nhạc",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
@@ -151,7 +151,7 @@ const translations = {
     showLess: "Thu Gọn",
 
     producerTitle: "Nhà Sản Xuất Âm Nhạc",
-    producerDesc: "Sáng tác nhạc. Sản xuất beat. Nhạc phim.",
+    producerDesc: "Âm thanh trực tiếp. Thu âm phòng thu. Hậu kỳ âm thanh.",
     createTitle: "Sản Phẩm Tôi Tạo Ra",
     originalTitle: "Sáng Tác Gốc",
     originalDesc:

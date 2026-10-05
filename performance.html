@@ -27,13 +27,7 @@
         overflow: hidden;
         border-bottom: 1px solid #1a1a1a;
       }
-      .sound-hero h1 {
-        font-family: "Bebas Neue", sans-serif;
-        font-size: 3.5rem;
-        letter-spacing: 2px;
-        color: #fff;
-        margin: 0;
-      }
+
       .perf-section,
       .perf-section1 {
         width: 100%;
@@ -136,7 +130,6 @@
         gap: 30px;
         max-width: 450px;
         transition: border-color 0.3s;
-        
       }
       .judging-box:hover {
         border-color: #ff4500;
@@ -238,15 +231,16 @@
       <h1
         id="perfHeroTitle"
         style="
-          font-family: &quot;Inter&quot;, &quot;Oswald&quot;, sans-serif;
-          font-weight: 700;
-          font-size: 3rem;
-          letter-spacing: 2px;
-          color: #fff;
-          margin: 0;
-          position: relative;
-          z-index: 1;
-          text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+          font-family: var(--title-font);
+
+          font-weight: 600;
+
+          letter-spacing: 1px;
+
+          line-height: 1.05;
+
+          text-transform: uppercase;
+          font-size: 73px;
         "
       >
         PERFORMANCE & MUSICAL BACKGROUND
@@ -373,7 +367,7 @@
 
     <!-- CHƯƠNG TRÌNH TRỰC TIẾP (LIVE SHOWS) -->
     <section class="perf-section">
-      <h2 id="titleLiveShows">CHƯƠNG TRÌNH TRỰC TIẾP </h2>
+      <h2 id="titleLiveShows">CHƯƠNG TRÌNH TRỰC TIẾP</h2>
       <div class="perf-table-dark">
         <div class="perf-row-dark">
           <div class="event-title">
@@ -525,33 +519,37 @@
     </section>
 
     <footer class="footer">
-  <div class="footer-col">
-    <h3 id="footerTitle">Hau Tran</h3>
-    <p id="footerDesc">
-      Sound engineer and audio producer working at the intersection of
-      technical precision and creative instinct.
-    </p>
-    <div class="social">
-      <a href="https://www.facebook.com/tran.haudrum/"><i class="fab fa-facebook-f"></i></a>
-      <p>Facebook</p>
-    </div>
-  </div>
+      <div class="footer-col">
+        <h3 id="footerTitle">Hau Tran</h3>
+        <p id="footerDesc">
+          Sound engineer and audio producer working at the intersection of
+          technical precision and creative instinct.
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/tran.haudrum/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <p>Facebook</p>
+        </div>
+      </div>
 
-  <div class="footer-col">
-    <h4 id="footerNavTitle">Navigation</h4>
-    <a href="index.html" id="footerNavOverview">Overview</a>
-    <a href="sound-engineer.html" id="footerNavSound">Audio Director / Audio Engineer</a>
-    <a href="audio-producer.html" id="footerNavProducer">Music Producer</a>
-    <a href="performance.html" id="footerNavPerformance">Performance</a>
-  </div>
+      <div class="footer-col">
+        <h4 id="footerNavTitle">Navigation</h4>
+        <a href="index.html" id="footerNavOverview">Overview</a>
+        <a href="sound-engineer.html" id="footerNavSound"
+          >Audio Director / Audio Engineer</a
+        >
+        <a href="audio-producer.html" id="footerNavProducer">Music Producer</a>
+        <a href="performance.html" id="footerNavPerformance">Performance</a>
+      </div>
 
-  <div class="footer-col">
-    <h4 id="footerContactTitle">Contact</h4>
-    <p>Email: tranhauaudio@gmail.com</p>
-    <p>Phone: 0984 123 494</p>
-    <p id="footerLocation">Location: Ho Chi Minh City</p>
-  </div>
-</footer>
+      <div class="footer-col">
+        <h4 id="footerContactTitle">Contact</h4>
+        <p>Email: tranhauaudio@gmail.com</p>
+        <p>Phone: 0984 123 494</p>
+        <p id="footerLocation">Location: Ho Chi Minh City</p>
+      </div>
+    </footer>
 
     <div class="footer-bottom">
       <p>© 2025 Trung Kien & Truc Vy. All rights reserved.</p>
