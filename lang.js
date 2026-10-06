@@ -11,9 +11,9 @@ const translations = {
     aboutDesc: "Starting out as a professional musician, I came to sound through years of standing on stage. Performance experience has taught me that sound must not only be clear and beautiful, but must also capture the spirit of the artist and the emotion of the performance. Therefore, I always begin by listening — listening to the artist, the space, and the music — so that the sound blends naturally into the stage.",
 
     chooseSoundTitle: "Audio Director / Audio Engineer",
-    chooseSoundDesc: "Live Sound. Studio Recording. Audio Post - Production",
+    chooseSoundDesc: "Live Sound. Studio Recording. Audio Post Production",
     chooseProducerTitle: "Music Producer",
-    chooseProducerDesc: "Live Sound. Studio Recording. Audio Post - Production.",
+    chooseProducerDesc: "Live Sound. Studio Recording. Audio Post Production.",
     choosePerformanceTitle: "MUSICAL BACKROUND /PERFORMANCE",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
 
@@ -35,7 +35,7 @@ const translations = {
     quoteAuthor: "— Linh Phuong, Recording Artist & Vocalist",
 
     soundTitle: "Audio Director / Audio Engineer",
-    soundDesc: "Live Sound. Studio Recording. Audio Post - Production",
+    soundDesc: "Live Sound. Studio Recording. Audio Post Production",
     whatTitle: "What I Do",
     liveSoundTitle: "Live Event Sound",
     liveSoundDesc:
@@ -63,7 +63,7 @@ const translations = {
     showLess: "Show Less",
 
     producerTitle: "Music Producer",
-    producerDesc: "Live Sound. Studio Recording. Audio Post - Production ",
+    producerDesc: "Live Sound. Studio Recording. Audio Post Production ",
     createTitle: "What I Create",
     originalTitle: "Original Composition",
     originalDesc:
