@@ -1040,11 +1040,17 @@ linear-gradient(
   background: #0a0a0a;
 }
 
-.sound-work h2 {
+.sound-work h2, 
+.title-with-bar h2{
   font-size: 32px;
   border-left: 2px solid #ff3b24;
   padding-left: 14px;
   margin-bottom: 40px;
+}
+
+.title-with-bar h2{
+  margin-left: 70px;
+  margin-top: 40px;
 }
 
 .sound-work-grid {
@@ -2197,3 +2203,71 @@ linear-gradient(
   }
 }
 
+
+
+/* Phần chữ ở trên */
+.section-header-center {
+  text-align: left; /* Giữ chữ căn trái tự nhiên nhưng khối nằm giữa */
+  width: 100%;
+  max-width: 900px; /* Khớp với độ rộng khung ảnh bên dưới */
+  margin-bottom: 20px;
+
+}
+
+.title-with-bar span {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.section-header-center small {
+  display: block;
+  font-size: 14px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 16px;
+}
+
+/* Khung nhìn bên ngoài (Viewport) của ảnh */
+.project-slideshow-viewport {
+  width: calc(100% - 60px); /* Tự động thụt vào tổng cộng 60px (mỗi bên 30px) */
+  max-width: 1200px;       /* Giới hạn độ rộng tối đa để khung không bị quá bè */
+  height: 480px;           /* Chiều cao khung ảnh */
+  border-radius: 8px;
+  overflow: hidden;        /* Ẩn phần ảnh chạy ra ngoài khung */
+  position: relative;
+  margin: 0 auto;          /* Canh giữa khung ảnh */
+}
+
+/* Khung chứa ảnh trượt (rộng 200% để chứa 2 ảnh cạnh nhau) */
+.slideshow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200%;
+  height: 100%;
+  transition: transform 1s ease-in-out; /* Tốc độ trượt mượt mà trong 1 giây */
+}
+
+/* Từng item ảnh bên trong */
+.slide-item {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Responsive cho màn hình điện thoại nhỏ */
+@media (max-width: 768px) {
+  .project-slideshow-viewport {
+    height: 280px;
+  }
+  .title-with-bar span {
+    font-size: 22px;
+  }
+}

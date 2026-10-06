@@ -76,6 +76,8 @@ const translations = {
       "Emotional soundtracks and cues for short films, ads, and campaigns.",
     collaborationsTitle: "Featured Collaborations",
 
+    recordingProjectTitle: "RECORDING PROJECT", // Thêm Tiếng Anh
+
     footerNavigation: "Navigation",
     footerServices: "Services",
     footerContact: "Contact",
@@ -170,6 +172,8 @@ const translations = {
       "Soundtrack và cue giàu cảm xúc cho phim ngắn, quảng cáo và chiến dịch truyền thông.",
     collaborationsTitle: "Dự Án Hợp Tác Nổi Bật",
 
+    recordingProjectTitle: "DỰ ÁN GHI ÂM", // Thêm Tiếng Việt
+
     footerNavigation: "Điều Hướng",
     footerServices: "Dịch Vụ",
     footerContact: "Liên Hệ",
@@ -224,6 +228,9 @@ function setLanguage(lang) {
   setText("titleLiveShows", t.liveShowsTitle);
   setText("titleJudging", t.judgingTitle);
   setText("roleJudge", t.judgeRole);
+
+  // Cập nhật tiêu đề Dự án ghi âm
+  setText("recordingProjectTitle", t.recordingProjectTitle);
 
   // Cập nhật Footer
   setText("footerTitle", t.footerTitle);

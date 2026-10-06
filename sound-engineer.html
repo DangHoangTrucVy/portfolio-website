@@ -539,30 +539,38 @@
             <span>Saigon Choir Concert - Hạt dẻ 3</span>
             <small>Concert</small>
           </div>
-          <div
-            class="show-row"
-            data-gallery="assets/anh1/1.jpg"
-          >
-            <span>Mỹ Tâm & Hoài Sa Band - Hozo Festival 2024(FOH Engineer)</span>
+          <div class="show-row" data-gallery="assets/anh1/1.jpg">
+            <span
+              >Mỹ Tâm & Hoài Sa Band - Hozo Festival 2024(FOH Engineer)</span
+            >
             <small>Concert</small>
           </div>
           <div
             class="show-row"
             data-gallery="assets/anh2/2.jpg, assets/anh2/3.jpg, assets/anh2/1.jpg"
           >
-            <span>A.Train (에이트레인) - Hozo Festival 2024 (FOH Engineer)</span>
+            <span
+              >A.Train (에이트레인) - Hozo Festival 2024 (FOH Engineer)</span
+            >
             <small>Concert</small>
-          </div>
-
-          <div
-            class="show-row"
-            data-gallery="assets/bosung/1.png,assets/bosung/2.png,assets/bosung/3.png,assets/bosung/4.png,assets/bosung/5.png,assets/bosung/6.png,assets/bosung/7.png,assets/bosung/8.png,assets/bosung/9.png,assets/bosung/10.png"
-          >
-            <span>Recording Project</span>
-            <small>Record</small>
           </div>
         </div>
         <button class="show-toggle" id="showToggle">Show All</button>
+      </div>
+    </section>
+
+    <section class="project-showcase-center">
+      <div class="section-header-center">
+        <div class="title-with-bar">
+          <h2 id="recordingProjectTitle">DỰ ÁN GHI ÂM</h2>
+        </div>
+      </div>
+
+      <div class="project-slideshow-viewport">
+        <div
+          class="slideshow-container"
+          data-gallery="assets/bosung/1.png,assets/bosung/2.png,assets/bosung/3.png,assets/bosung/4.png,assets/bosung/5.png,assets/bosung/6.png,assets/bosung/7.png,assets/bosung/8.png,assets/bosung/9.png,assets/bosung/10.png"
+        ></div>
       </div>
     </section>
 
@@ -627,6 +635,64 @@
           showFeaturedBtn.textContent = isExpanded ? "Show Less" : "Show All";
         });
       }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.querySelector(
+          ".project-showcase-center .slideshow-container",
+        );
+        if (!container) return;
+
+        const galleryData = container.getAttribute("data-gallery");
+        if (!galleryData) return;
+
+        const images = galleryData.split(",").map((img) => img.trim());
+        if (images.length === 0) return;
+
+        // Nếu chỉ có 1 ảnh thì hiển thị luôn
+        if (images.length === 1) {
+          container.innerHTML = `<div class="slide-item" style="background-image: url('${images[0]}')"></div>`;
+          container.style.width = "100%";
+          return;
+        }
+
+        let currentIndex = 0;
+
+        // Khởi tạo 2 ảnh đầu tiên vào khung
+        container.innerHTML = `
+    <div class="slide-item" style="background-image: url('${images[0]}')"></div>
+    <div class="slide-item" style="background-image: url('${images[1]}')"></div>
+  `;
+
+        function slideNext() {
+          // 1. Dịch chuyển khung sang trái để lộ ảnh thứ 2
+          container.style.transform = "translateX(-50%)";
+
+          // 2. Đợi hiệu ứng chạy xong (1 giây) thì reset về vị trí cũ và đổi ảnh ngầm
+          setTimeout(() => {
+            container.style.transition = "none";
+            container.style.transform = "translateX(0)";
+
+            currentIndex = (currentIndex + 1) % images.length;
+            const nextIndex = (currentIndex + 1) % images.length;
+
+            // Cập nhật lại 2 ảnh mới cho vòng lặp tiếp theo
+            container.innerHTML = `
+        <div class="slide-item" style="background-image: url('${images[currentIndex]}')"></div>
+        <div class="slide-item" style="background-image: url('${images[nextIndex]}')"></div>
+      `;
+
+            // Bật lại hiệu ứng chuyển động
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                container.style.transition = "transform 1s ease-in-out";
+              });
+            });
+          }, 1000); // Khớp thời gian với CSS transition (1000ms = 1s)
+        }
+
+        // Cứ sau 4 giây thì chạy slide 1 lần
+        setInterval(slideNext, 4000);
+      });
     </script>
   </body>
 </html>
