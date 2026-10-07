@@ -4,10 +4,10 @@ const translations = {
     navSound: "Audio Director / Audio Engineer",
     navProducer: "Music Producer",
     navPerformance: "Performance & Musical Background",
-
+    navWorkshop: "Workshops & Masterclasses",
     // Phần giới thiệu mới (Tiếng Anh)
     aboutTitle: "HAU TRAN",
-    aboutQuote: "“Sound to me doesn't start with equipment, it starts with music and the artist.”",
+   
     aboutDesc: "Starting out as a professional musician, I came to sound through years of standing on stage. Performance experience has taught me that sound must not only be clear and beautiful, but must also capture the spirit of the artist and the emotion of the performance. Therefore, I always begin by listening — listening to the artist, the space, and the music — so that the sound blends naturally into the stage.",
 
     chooseSoundTitle: "Audio Director / Audio Engineer",
@@ -16,7 +16,7 @@ const translations = {
     chooseProducerDesc: "Live Sound. Studio Recording. Audio Post Production.",
     choosePerformanceTitle: "MUSICAL BACKROUND /PERFORMANCE",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
-
+    chooseWorkshopTitle: "Workshops & Masterclasses",
     explore: "Explore →",
 
     statProjects: "Projects Completed",
@@ -62,6 +62,7 @@ const translations = {
     showAll: "Show All",
     showLess: "Show Less",
 
+    workshopTitle: "Workshops & Masterclasses",
     producerTitle: "Music Producer",
     producerDesc: "Live Sound. Studio Recording. Audio Post-Production ",
     createTitle: "What I Create",
@@ -87,7 +88,7 @@ const translations = {
     footerMusic: "Music Production",
     footerLocation: "Location: Ho Chi Minh City",
     footerBottom: "Designed for Sound. Built for Impact.",
-
+    footerNavWorkshop: "Workshops & Masterclasses",
     footerTitle: "Hau Tran",
     footerNavTitle: "Navigation",
     footerContactTitle: "Contact",
@@ -98,10 +99,10 @@ const translations = {
     navSound: "Kỹ Sư Âm Thanh",
     navProducer: "Nhà Sản Xuất Âm Nhạc",
     navPerformance: "Nền tảng âm nhạc / Biểu diễn",
+    navWorkshop: "Các buổi hội thảo và lớp chuyên đề chuyên sâu",
 
     // Phần giới thiệu mới (Tiếng Việt)
     aboutTitle: "TRẦN HẬU",
-    aboutQuote: "“Âm thanh với tôi không bắt đầu từ thiết bị, mà bắt đầu từ âm nhạc và người nghệ sĩ”",
     aboutDesc: "Xuất phát từ một nhạc công chuyên nghiệp, tôi đến với âm thanh từ những năm tháng đứng trên sân khấu. Trải nghiệm biểu diễn giúp tôi hiểu rằng âm thanh không chỉ cần rõ và đẹp, mà còn phải giữ được tinh thần của người nghệ sĩ và cảm xúc của màn trình diễn. Vì vậy, tôi luôn bắt đầu bằng sự lắng nghe — lắng nghe nghệ sĩ, không gian và âm nhạc — để âm thanh hòa vào sân khấu một cách tự nhiên.",
 
     chooseSoundTitle: "Kỹ Sư Âm Thanh",
@@ -111,7 +112,7 @@ const translations = {
     explore: "Khám phá →",
     choosePerformanceTitle: "Nền tảng âm nhạc / Biểu diễn",
     choosePerformanceDesc: "Live performances. Musical education. Collaborations.",
-
+    chooseWorkshopTitle: "Các buổi hội thảo và lớp chuyên đề ",
     perfTitle: "NỀN TẢNG ÂM NHẠC / BIỂU DIỄN",
     gameShowsTitle: "Chương Trình Game Show",
     liveShowsTitle: "Chương Trình Trực Tiếp ",
@@ -126,7 +127,7 @@ const translations = {
     quoteText:
       "Hậu nghe được những điều mà nhiều người thường bỏ lỡ. Anh không chỉ xử lý âm thanh — anh còn định hình cảm xúc của cả không gian khi âm nhạc vang lên.",
     quoteAuthor: "— Linh Phương, Nghệ sĩ Thu Âm & Ca sĩ",
-
+    workshopTitle: "Các buổi hội thảo và lớp chuyên đề chuyên sâu",
     soundTitle: "Kỹ Sư Âm Thanh",
     soundDesc: "Âm thanh trực tiếp. Thu âm phòng thu. Hậu kỳ âm thanh.",
     whatTitle: "Công Việc Tôi Làm",
@@ -183,7 +184,7 @@ const translations = {
     footerMusic: "Sản Xuất Âm Nhạc",
     footerLocation: "Địa điểm: TP. Hồ Chí Minh",
     footerBottom: "Thiết kế cho âm thanh. Tạo nên dấu ấn.",
-
+    footerNavWorkshop: "Các buổi hội thảo và lớp chuyên đề chuyên sâu",
     footerTitle: "Hậu Trần",
     footerNavTitle: "Điều Hướng",
     footerContactTitle: "Liên Hệ",
@@ -204,15 +205,15 @@ function setLanguage(lang) {
   setText("navSound", t.navSound);
   setText("navProducer", t.navProducer);
   setText("navPerf", t.navPerformance);
+  setText("navWorkshop", t.navWorkshop);
 
   // Cập nhật phần giới thiệu mới
   setText("aboutTitle", t.aboutTitle);
-  setText("aboutQuote", t.aboutQuote);
   setText("aboutDesc", t.aboutDesc);
 
   setText("soundTitle", t.soundTitle);
   setText("soundDesc", t.soundDesc);
-
+  setText("workshopTitle", t.workshopTitle);
   setText("producerTitle", t.producerTitle);
   setText("producerDesc", t.producerDesc);
 
@@ -222,7 +223,7 @@ function setLanguage(lang) {
   setText("chooseProducerDesc", t.chooseProducerDesc);
   setText("choosePerformanceTitle", t.choosePerformanceTitle);
   setText("choosePerformanceDesc", t.choosePerformanceDesc);
-
+  setText("chooseWorkshopTitle", t.chooseWorkshopTitle);
   setText("perfHeroTitle", t.perfTitle);
   setText("titleGameShows", t.gameShowsTitle);
   setText("titleLiveShows", t.liveShowsTitle);
@@ -241,7 +242,7 @@ function setLanguage(lang) {
   setText("footerNavPerformance", t.navPerformance);
   setText("footerContactTitle", t.footerContactTitle);
   setText("footerLocation", t.footerLocation);
-
+  setText("footerNavWorkshop", t.footerNavWorkshop);
   document.querySelectorAll(".choose-card span").forEach((el) => {
     el.innerText = t.explore;
   });

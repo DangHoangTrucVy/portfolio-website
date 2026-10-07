@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Workshops & Masterclasses | Hau Tran</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+      <a href="index.html" class="logo1">
+        <img src="assets/lo.jpg" alt="Hau Tran Logo" />
+      </a>
+
+      <nav>
+        <a href="index.html" id="navOverview">Overview</a>
+        <a href="sound-engineer.html" id="navSound"
+          >Audio Director / Audio Engineer</a
+        >
+        <a href="audio-producer.html" id="navProducer">Music Producer</a>
+        <a href="performance.html" id="navPerf">Performance</a>
+        <a href="workshops.html" id="navWorkshop" class="active">
+          Workshops & Masterclasses
+        </a>
+      </nav>
+
+      <div class="lang-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('vi')">VI</button>
+      </div>
+    </header>
+
+    <!-- ================= WORKSHOP PAGE ================= -->
+
+    <main class="workshop-page">
+      <!-- PAGE TITLE -->
+
+      <section class="workshop-heading">
+        <div class="workshop-hero-content">
+         
+
+          <h1
+            id="workshopTitle"
+            
+            style="
+              font-family: var(--title-font);
+
+              font-weight: 600;
+
+              letter-spacing: 1px;
+
+              line-height: 1.5;
+              text-align: center;
+
+              text-transform: uppercase;
+              font-size: 73px;
+            "
+          >
+            WORKSHOPS & MASTERCLASSES.
+          </h1>
+        </div>
+      </section>
+
+      <!-- ================= GALLERY ================= -->
+
+      <section class="workshop-gallery">
+        <!-- ITEM 1 -->
+
+        <div class="workshop-card" onclick="openWorkshop(this)">
+          <img src="assets/cuoi/1.jpg" alt="Mixing & Miking Workshop" />
+
+          <div class="workshop-overlay">
+            <div>
+              <span class="workshop-category"> WORKSHOP </span>
+
+              <h2>Mixing & Miking</h2>
+            </div>
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <!-- ITEM 2 -->
+
+        <div class="workshop-card" onclick="openWorkshop(this)">
+          <img src="assets/cuoi/2.jpg" alt="Drum Miking Workshop" />
+
+          <div class="workshop-overlay">
+            <div>
+              <span class="workshop-category"> MASTERCLASS </span>
+
+              <h2>Drum Miking</h2>
+            </div>
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+
+        <div class="workshop-card" onclick="openWorkshop(this)">
+          <img src="assets/cuoi/3.jpg" alt="Drum Workshop" />
+
+          <div class="workshop-overlay">
+            <div>
+              <span class="workshop-category"> WORKSHOP </span>
+
+              <h2>Drum Workshop</h2>
+            </div>
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+
+        <!-- ITEM 4 -->
+
+        <div class="workshop-card" onclick="openWorkshop(this)">
+          <img src="assets/cuoi/4.jpg" alt="Music Production Workshop" />
+
+          <div class="workshop-overlay">
+            <div>
+              <span class="workshop-category"> MASTERCLASS </span>
+
+              <h2>Music Production</h2>
+            </div>
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-col">
+        <h3 id="footerTitle">Hau Tran</h3>
+        <!-- Đã xóa đoạn mô tả cũ ở đây theo yêu cầu -->
+        <div class="social">
+          <a href="https://www.facebook.com/tran.haudrum/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <p>Facebook</p>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footerNavTitle">Navigation</h4>
+        <a href="index.html" id="footerNavOverview">Overview</a>
+        <a href="sound-engineer.html" id="footerNavSound"
+          >Audio Director / Audio Engineer</a
+        >
+        <a href="audio-producer.html" id="footerNavProducer">Music Producer</a>
+        <a href="performance.html" id="footerNavPerformance">Performance</a>
+        <a href="workshops.html" id="footerNavWorkshop"
+          >Workshops & Masterclasses</a
+        >
+      </div>
+
+      <div class="footer-col">
+        <h4 id="footerContactTitle">Contact</h4>
+        <p>Email: tranhauaudio@gmail.com</p>
+        <p>Phone: 0984 123 494</p>
+        <p id="footerLocation">Location: Ho Chi Minh City</p>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>© 2025 Trung Kien & Truc Vy. All rights reserved.</p>
+      <p>Designed for Sound. Built for Impact.</p>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="lang.js"></script>
+    <script src="scripts.js"></script>
+
+    <script>
+      function openWorkshop(card) {
+        const image = card.querySelector("img");
+
+        const src = image.src;
+        const title = image.alt;
+
+        const modal = document.createElement("div");
+
+        modal.className = "workshop-modal";
+
+        modal.innerHTML = `
+        <div class="modal-content">
+
+          <button class="modal-close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <img src="${src}" alt="${title}">
+
+          <h2>${title}</h2>
+
+        </div>
+      `;
+
+        document.body.appendChild(modal);
+
+        modal.querySelector(".modal-close").onclick = () => {
+          modal.remove();
+        };
+
+        modal.onclick = (e) => {
+          if (e.target === modal) {
+            modal.remove();
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
